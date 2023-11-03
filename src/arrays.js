@@ -3,7 +3,15 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  const bigNumbers = 
+  const bigNumbers = []
+
+  for (let i = 0; i < numbers.length; i++){
+    if(numbers[i] > 10){
+      bigNumbers.push(numbers[i])
+    }
+  }
+
+  return bigNumbers
 }
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
